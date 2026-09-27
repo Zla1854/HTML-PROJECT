@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Portfolio | Web Development Journey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div class="loader-wrap" id="loader">
+    <div class="loader-ring">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p class="loader-text">Loading Portfolio...</p>
+  </div>
+
+  <!-- ===================== NAV (FIXED) ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Dev<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+        <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Hello, World! &#128075;</p>
+      <h1 class="hero-title">
+        I am a <span class="typewriter">Web Developer.</span>
+      </h1>
+      <p class="hero-sub">
+        A passionate learner crafting pixel-perfect, responsive websites<br />
+        with nothing but <strong>HTML</strong> &amp; <strong>CSS</strong>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#about" class="btn btn-ghost">About Me</a>
+      </div>
+      <div class="hero-stack">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Flexbox</span>
+        <span class="tag">CSS Grid</span>
+        <span class="tag">Animations</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <h2>About <span class="accent">Me</span></h2>
+      <p class="section-sub">The human behind the code</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <span>Photo</span>
+          </div>
+          <div class="image-badge">Student</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h3>Web Development Student</h3>
+        <p>
+          I am a dedicated web development student on a mission to master the fundamentals of building beautiful, functional, and accessible websites. Through structured learning, hands-on assignments, and a product mindset, I am growing into a well-rounded developer.
+        </p>
+        <p>
+          I believe in understanding <em>why</em> technologies exist before using them, choosing the right tool for the right job, and writing clean, structured code.
+        </p>
+        <h4>My Learning Journey</h4>
+        <ol class="journey-list">
+          <li>Understanding how the web works - Client, Server &amp; HTTP</li>
+          <li>Structuring content with semantic HTML</li>
+          <li>Styling with CSS selectors &amp; properties</li>
+          <li>Mastering the Box Model</li>
+          <li>Building flexible layouts with Flexbox</li>
+          <li>Creating responsive grids with CSS Grid</li>
+          <li>Advanced positioning, specificity &amp; cascade</li>
+          <li>Bringing pages to life with animations &amp; transitions</li>
+        </ol>
+        <div class="about-tags">
+          <span class="tag">Product Mindset</span>
+          <span class="tag">MERN Stack (Learning)</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+  <section class="education" id="education">
+    <div class="section-header">
+      <h2>Education & <span class="accent">Experience</span></h2>
+      <p class="section-sub">My academic and professional background</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-content" style="grid-column: 1 / -1;">
+        <h3>Bachelor of Technology in Computer Science</h3>
+        <p>
+          Currently enrolled in a comprehensive Computer Science program, focusing on core engineering principles, software development, and web technologies.
+        </p>
+        <h4>Key Coursework</h4>
+        <ul class="journey-list" style="list-style-type: disc;">
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Web Development (MERN Stack)</li>
+          <li>Object-Oriented Programming</li>
+        </ul>
+        <h4 style="margin-top: 30px;">Experience</h4>
+        <p>
+          Building hands-on projects, participating in coding challenges, and consistently applying theoretical concepts to practical, real-world web applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <h2>Skills <span class="accent">Acquired</span></h2>
+      <p class="section-sub">Technologies and concepts I have mastered</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">&lt;/&gt;</div>
+        <h4>HTML5</h4>
+        <p>Semantic markup, forms, tables, lists</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:88%"></div>
+        </div>
+        <span class="skill-pct">88%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">{ }</div>
+        <h4>CSS3</h4>
+        <p>Selectors, specificity, cascade &amp; inheritance</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:82%"></div>
+        </div>
+        <span class="skill-pct">82%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#8596;</div>
+        <h4>Flexbox</h4>
+        <p>Flex container, axes, grow/shrink/wrap</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:85%"></div>
+        </div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#9634;</div>
+        <h4>CSS Grid</h4>
+        <p>Grid placement, spanning, responsive layouts</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:78%"></div>
+        </div>
+        <span class="skill-pct">78%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#9654;</div>
+        <h4>Animations</h4>
+        <p>Transitions, transforms, keyframe animations</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:75%"></div>
+        </div>
+        <span class="skill-pct">75%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#128241;</div>
+        <h4>Responsive</h4>
+        <p>Mobile-first design, media queries, breakpoints</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--pct:80%"></div>
+        </div>
+        <span class="skill-pct">80%</span>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <h3 class="table-title">Course Syllabus - Completed Topics</h3>
+      <table class="syllabus-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Topic</th>
+            <th>Key Concepts</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Web Fundamentals &amp; HTML Intro</td>
+            <td>Client, Server, HTTP, HTML tags, headings, paragraphs, links</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>HTML Lists, Tables &amp; Forms</td>
+            <td>ol, ul, tables, input, dropdown, radio, checkbox</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>CSS Basics</td>
+            <td>Selectors, properties, text, colors, spacing</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Box Model</td>
+            <td>margin, border, padding, width, height</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Flexbox &amp; Media Queries</td>
+            <td>flex-direction, justify-content, align-items, flex-wrap</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>CSS Grid &amp; Responsive Design</td>
+            <td>grid-template, grid-column, mobile-first</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Specificity &amp; Positioning</td>
+            <td>Cascade, relative, absolute, fixed, sticky, z-index</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Animations &amp; Transitions</td>
+            <td>transition, transform, @keyframes, loaders, modals</td>
+            <td><span class="status done">Done</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concepts-wrap">
+      <h3>Core Web Concepts I Know</h3>
+      <ul class="concepts-list">
+        <li>How browsers render HTML and apply CSS</li>
+        <li>The difference between inline, block, and inline-block elements</li>
+        <li>How specificity resolves conflicting CSS rules</li>
+        <li>Stacking context and how z-index actually works</li>
+        <li>When to use Flexbox vs CSS Grid</li>
+        <li>How HTTP works between clients and servers</li>
+        <li>Why mobile-first design leads to better performance</li>
+        <li>How keyframe animations differ from CSS transitions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <h2>My <span class="accent">Projects</span></h2>
+      <p class="section-sub">Hover cards to reveal details</p>
+    </div>
+        <div class="projects-grid">
+
+      <div class="project-card-wrap">
+        <div class="project-card">
+          <div class="project-front">
+            <div class="project-num">01</div>
+            <h4>Flexbox Quest Game</h4>
+            <p>Interactive Flexbox UI</p>
+            <ul>
+              <li>Game layout</li>
+              <li>Flexbox alignments</li>
+              <li>Interactive controls</li>
+            </ul>
+          </div>
+          <div class="project-back">
+            <h4>What I Used</h4>
+            <p>Semantic HTML5 tags and CSS Flexbox to create an interactive game UI layout.</p>
+            <a href="gamrbar.html" class="btn btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card-wrap">
+        <div class="project-card">
+          <div class="project-front">
+            <div class="project-num">02</div>
+            <h4>Student Portal</h4>
+            <p>HTML Forms & Tables</p>
+            <ul>
+              <li>Profile data display</li>
+              <li>Registration form</li>
+              <li>Weekly schedule</li>
+            </ul>
+          </div>
+          <div class="project-back">
+            <h4>What I Used</h4>
+            <p>Form elements, styled tables, and semantic HTML to build a comprehensive student portal.</p>
+            <a href="student.html" class="btn btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-trigger-wrap">
+      <a href="#final-modal" class="btn btn-primary">View Final Project</a>
+    </div>
+  </section>
+
+  <!-- ===================== CSS-ONLY MODAL ===================== -->
+  <div class="modal-overlay" id="final-modal">
+    <div class="modal-box">
+      <h3>Final Class Project</h3>
+      <p>Built entirely in class with TA evaluation, this final project brings together every concept from the course:</p>
+      <ul>
+        <li>Semantic HTML structure</li>
+        <li>Responsive design with Flexbox &amp; Grid</li>
+        <li>Advanced CSS positioning &amp; z-index</li>
+        <li>Keyframe animations &amp; smooth transitions</li>
+        <li>Accessible, styled form inputs</li>
+      </ul>
+      <p class="modal-grade">Grade: <strong>A+</strong></p>
+      <a href="#projects" class="btn btn-primary modal-close">Close</a>
+    </div>
+  </div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <h2>Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">Let us connect and collaborate</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Let us Talk</h3>
+        <p>I am open to feedback, collaboration, internships, and any exciting web development opportunities.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon">@</span>
+            <a href="mailto:student@example.com">student@example.com</a>
+          </li>
+          <li>
+            <span class="contact-icon">+</span>
+            <span>Available for internships &amp; projects</span>
+          </li>
+          <li>
+            <span class="contact-icon">*</span>
+            <span>Remote-friendly</span>
+          </li>
+        </ul>
+        <div class="contact-availability">
+          <h4>I am best at:</h4>
+          <ul>
+            <li>Responsive HTML/CSS layouts</li>
+            <li>Clean, semantic markup</li>
+            <li>CSS animations &amp; UI effects</li>
+            <li>Translating designs to code</li>
+          </ul>
+        </div>
+      </div>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">-- Select a topic --</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="internship">Internship Opportunity</option>
+            <option value="feedback">Project Feedback</option>
+            <option value="mentorship">Mentorship</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Contact Method</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="contact_method" value="email" checked />
+              <span class="radio-custom"></span>
+              Email
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="contact_method" value="linkedin" />
+              <span class="radio-custom"></span>
+              LinkedIn
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="contact_method" value="github" />
+              <span class="radio-custom"></span>
+              GitHub
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me what is on your mind..." required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="newsletter" id="newsletter" />
+            <span class="checkbox-custom"></span>
+            Subscribe to my dev journey newsletter
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Built with love using only <strong>HTML</strong> &amp; <strong>CSS</strong> - no JavaScript.
+      </p>
+            <nav class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-note">2026 Web Dev Student Portfolio. All concepts from the MERN Stack Syllabus.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
