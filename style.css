@@ -344,12 +344,12 @@ h1, h2, h3, h4 {
   border-right: 3px solid var(--clr-primary);
   width: 0;
   animation:
-    typeOut 1.8s steps(18) 3.2s forwards,
+    typeOut 1.8s steps(11) 3.2s forwards,
     blink 0.75s step-end infinite 3.2s;
 }
 
 @keyframes typeOut {
-  to { width: 19ch; }
+  to { width: 12ch; }
 }
 
 @keyframes blink {
@@ -1545,4 +1545,5 @@ section {
   box-shadow: var(--shadow-glow);
   transform: translateY(-4px);
 }
+
 
